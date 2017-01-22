@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1485097267011" stop="1485097279348" version="1.4.24.RC3" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default Suite : examples</name>
+    <title>Default Suite : examples</title>
+    <test-cases>
+        <test-case start="1485097273839" stop="1485097279341" status="passed">
+            <name>isSearchInputPresent</name>
+            <description>To check whether the search input field is present on-screen</description>
+            <steps/>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default Suite"/>
+                <label name="testGroup" value="examples"/>
+                <label name="testClass" value="elementnotpresent.test.IsSearchInputPresent"/>
+                <label name="testMethod" value="isSearchInputPresent"/>
+                <label name="host" value="DESKTOP-S1NO9MQ"/>
+                <label name="thread" value="12212@DESKTOP-S1NO9MQ.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>
