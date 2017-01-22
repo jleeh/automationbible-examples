@@ -337,3 +337,698 @@ Session ID: 8645ca36-b2f3-4bb6-a451-acd80d597d1c
 2017-01-22 15:01:19.595 [main] DEBUG com.frameworkium.core.ui.tests.BaseTest - Async screenshot capture: finished backlog.
 2017-01-22 15:01:19.596 [main] DEBUG com.frameworkium.core.ui.tests.BaseTest - About to tear down remaining driver(s)
 2017-01-22 15:01:21.294 [main] DEBUG com.frameworkium.core.ui.tests.BaseTest - Finished remaining driver tear down
+2017-01-22 22:11:47.780 [main] WARN  com.frameworkium.core.ui.tests.BaseTest - categoryTabletsTest doesn't have a TestID annotation.
+2017-01-22 22:11:47.811 [main] DEBUG com.frameworkium.core.ui.driver.AbstractDriver - Browser Capabilities: Capabilities [{marionette=true, browserName=firefox, version=, platform=ANY}]
+2017-01-22 22:11:48.233 [main] ERROR com.frameworkium.core.ui.tests.BaseTest - Failed to configure browser.
+java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:199) ~[guava-19.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:109) ~[selenium-remote-driver-3.0.1.jar:?]
+	at org.openqa.selenium.firefox.GeckoDriverService.access$000(GeckoDriverService.java:37) ~[selenium-firefox-driver-3.0.1.jar:?]
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:95) ~[selenium-firefox-driver-3.0.1.jar:?]
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296) ~[selenium-remote-driver-3.0.1.jar:?]
+	at org.openqa.selenium.firefox.FirefoxDriver.createCommandExecutor(FirefoxDriver.java:277) ~[selenium-firefox-driver-3.0.1.jar:?]
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:247) ~[selenium-firefox-driver-3.0.1.jar:?]
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:242) ~[selenium-firefox-driver-3.0.1.jar:?]
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:135) ~[selenium-firefox-driver-3.0.1.jar:?]
+	at com.frameworkium.core.ui.driver.drivers.FirefoxImpl.getWebDriver(FirefoxImpl.java:33) ~[frameworkium-core-2.3.3.jar:?]
+	at com.frameworkium.core.ui.driver.AbstractDriver.setupEventFiringWebDriver(AbstractDriver.java:71) ~[frameworkium-core-2.3.3.jar:?]
+	at com.frameworkium.core.ui.driver.AbstractDriver.initialise(AbstractDriver.java:55) ~[frameworkium-core-2.3.3.jar:?]
+	at com.frameworkium.core.ui.driver.AbstractDriver.resetBrowser(AbstractDriver.java:30) ~[frameworkium-core-2.3.3.jar:?]
+	at com.frameworkium.core.ui.tests.BaseTest.configureBrowserBeforeTest(BaseTest.java:138) [frameworkium-core-2.3.3.jar:?]
+	at com.frameworkium.core.ui.tests.BaseTest.configureBrowserBeforeTest(BaseTest.java:113) [frameworkium-core-2.3.3.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_121]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104) [testng-6.10.jar:?]
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515) [testng-6.10.jar:?]
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217) [testng-6.10.jar:?]
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:590) [testng-6.10.jar:?]
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851) [testng-6.10.jar:?]
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177) [testng-6.10.jar:?]
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129) [testng-6.10.jar:?]
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112) [testng-6.10.jar:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:756) [testng-6.10.jar:?]
+	at org.testng.TestRunner.run(TestRunner.java:610) [testng-6.10.jar:?]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387) [testng-6.10.jar:?]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382) [testng-6.10.jar:?]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340) [testng-6.10.jar:?]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289) [testng-6.10.jar:?]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-6.10.jar:?]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86) [testng-6.10.jar:?]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293) [testng-6.10.jar:?]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218) [testng-6.10.jar:?]
+	at org.testng.TestNG.runSuites(TestNG.java:1133) [testng-6.10.jar:?]
+	at org.testng.TestNG.run(TestNG.java:1104) [testng-6.10.jar:?]
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72) [testng-plugin.jar:?]
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:127) [testng-plugin.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_121]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:147) [idea_rt.jar:?]
+2017-01-22 22:11:48.326 [main] INFO  com.frameworkium.core.common.listeners.TestListener - START opencart.test.CategoryTabletsTest.categoryTabletsTest
+2017-01-22 22:11:48.670 [main] WARN  com.frameworkium.core.common.listeners.TestListener - SKIP  opencart.test.CategoryTabletsTest.categoryTabletsTest
+2017-01-22 22:11:48.701 [main] ERROR com.frameworkium.core.ui.listeners.ScreenshotListener - Unable to take screenshot - java.lang.NullPointerException
+2017-01-22 22:11:49.014 [main] DEBUG com.frameworkium.core.ui.tests.BaseTest - Async screenshot capture: processing remaining backlog...
+2017-01-22 22:11:49.014 [main] DEBUG com.frameworkium.core.ui.tests.BaseTest - Async screenshot capture: finished backlog.
+2017-01-22 22:11:49.014 [main] DEBUG com.frameworkium.core.ui.tests.BaseTest - About to tear down remaining driver(s)
+2017-01-22 22:11:49.014 [main] DEBUG com.frameworkium.core.ui.tests.BaseTest - Finished remaining driver tear down
+2017-01-22 22:12:38.903 [main] WARN  com.frameworkium.core.ui.tests.BaseTest - categoryTabletsTest doesn't have a TestID annotation.
+2017-01-22 22:12:38.966 [main] DEBUG com.frameworkium.core.ui.driver.AbstractDriver - Browser Capabilities: Capabilities [{marionette=true, browserName=firefox, version=, platform=ANY}]
+2017-01-22 22:12:39.169 [main] ERROR com.frameworkium.core.ui.tests.BaseTest - Failed to configure browser.
+java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.gecko.driver system property; for more information, see https://github.com/mozilla/geckodriver. The latest version can be downloaded from https://github.com/mozilla/geckodriver/releases
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:199) ~[guava-19.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:109) ~[selenium-remote-driver-3.0.1.jar:?]
+	at org.openqa.selenium.firefox.GeckoDriverService.access$000(GeckoDriverService.java:37) ~[selenium-firefox-driver-3.0.1.jar:?]
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.findDefaultExecutable(GeckoDriverService.java:95) ~[selenium-firefox-driver-3.0.1.jar:?]
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:296) ~[selenium-remote-driver-3.0.1.jar:?]
+	at org.openqa.selenium.firefox.FirefoxDriver.createCommandExecutor(FirefoxDriver.java:277) ~[selenium-firefox-driver-3.0.1.jar:?]
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:247) ~[selenium-firefox-driver-3.0.1.jar:?]
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:242) ~[selenium-firefox-driver-3.0.1.jar:?]
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:135) ~[selenium-firefox-driver-3.0.1.jar:?]
+	at com.frameworkium.core.ui.driver.drivers.FirefoxImpl.getWebDriver(FirefoxImpl.java:33) ~[frameworkium-core-2.3.3.jar:?]
+	at com.frameworkium.core.ui.driver.AbstractDriver.setupEventFiringWebDriver(AbstractDriver.java:71) ~[frameworkium-core-2.3.3.jar:?]
+	at com.frameworkium.core.ui.driver.AbstractDriver.initialise(AbstractDriver.java:55) ~[frameworkium-core-2.3.3.jar:?]
+	at com.frameworkium.core.ui.driver.AbstractDriver.resetBrowser(AbstractDriver.java:30) ~[frameworkium-core-2.3.3.jar:?]
+	at com.frameworkium.core.ui.tests.BaseTest.configureBrowserBeforeTest(BaseTest.java:138) [frameworkium-core-2.3.3.jar:?]
+	at com.frameworkium.core.ui.tests.BaseTest.configureBrowserBeforeTest(BaseTest.java:113) [frameworkium-core-2.3.3.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_121]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104) [testng-6.10.jar:?]
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515) [testng-6.10.jar:?]
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217) [testng-6.10.jar:?]
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:590) [testng-6.10.jar:?]
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851) [testng-6.10.jar:?]
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177) [testng-6.10.jar:?]
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129) [testng-6.10.jar:?]
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112) [testng-6.10.jar:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:756) [testng-6.10.jar:?]
+	at org.testng.TestRunner.run(TestRunner.java:610) [testng-6.10.jar:?]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387) [testng-6.10.jar:?]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382) [testng-6.10.jar:?]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340) [testng-6.10.jar:?]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289) [testng-6.10.jar:?]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-6.10.jar:?]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86) [testng-6.10.jar:?]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293) [testng-6.10.jar:?]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218) [testng-6.10.jar:?]
+	at org.testng.TestNG.runSuites(TestNG.java:1133) [testng-6.10.jar:?]
+	at org.testng.TestNG.run(TestNG.java:1104) [testng-6.10.jar:?]
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72) [testng-plugin.jar:?]
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:127) [testng-plugin.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_121]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:147) [idea_rt.jar:?]
+2017-01-22 22:12:39.216 [main] INFO  com.frameworkium.core.common.listeners.TestListener - START opencart.test.CategoryTabletsTest.categoryTabletsTest
+2017-01-22 22:12:39.388 [main] ERROR com.frameworkium.core.ui.listeners.ScreenshotListener - Unable to take screenshot - java.lang.NullPointerException
+2017-01-22 22:12:39.403 [main] WARN  com.frameworkium.core.common.listeners.TestListener - SKIP  opencart.test.CategoryTabletsTest.categoryTabletsTest
+2017-01-22 22:12:39.638 [main] DEBUG com.frameworkium.core.ui.tests.BaseTest - Async screenshot capture: processing remaining backlog...
+2017-01-22 22:12:39.638 [main] DEBUG com.frameworkium.core.ui.tests.BaseTest - Async screenshot capture: finished backlog.
+2017-01-22 22:12:39.638 [main] DEBUG com.frameworkium.core.ui.tests.BaseTest - About to tear down remaining driver(s)
+2017-01-22 22:12:39.638 [main] DEBUG com.frameworkium.core.ui.tests.BaseTest - Finished remaining driver tear down
+2017-01-22 22:12:52.354 [main] WARN  com.frameworkium.core.ui.tests.BaseTest - categoryTabletsTest doesn't have a TestID annotation.
+2017-01-22 22:12:52.385 [main] DEBUG com.frameworkium.core.ui.driver.AbstractDriver - Browser Capabilities: Capabilities [{marionette=true, browserName=firefox, version=, platform=ANY}]
+2017-01-22 22:12:59.141 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - running script return navigator.userAgent;
+2017-01-22 22:12:59.220 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - ran script return navigator.userAgent;
+2017-01-22 22:12:59.221 [main] INFO  com.frameworkium.core.common.listeners.TestListener - START opencart.test.CategoryTabletsTest.categoryTabletsTest
+2017-01-22 22:12:59.346 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.linkText: Tablets
+2017-01-22 22:12:59.374 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.linkText: Tablets
+2017-01-22 22:12:59.636 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.linkText: Tablets
+2017-01-22 22:12:59.900 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.linkText: Tablets
+2017-01-22 22:13:00.163 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.linkText: Tablets
+2017-01-22 22:13:00.423 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.linkText: Tablets
+2017-01-22 22:13:00.683 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.linkText: Tablets
+2017-01-22 22:13:00.943 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.linkText: Tablets
+2017-01-22 22:13:01.241 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.linkText: Tablets
+2017-01-22 22:13:01.503 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.linkText: Tablets
+2017-01-22 22:13:01.783 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.linkText: Tablets
+2017-01-22 22:13:02.052 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.linkText: Tablets
+2017-01-22 22:13:02.320 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.linkText: Tablets
+2017-01-22 22:13:02.581 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.linkText: Tablets
+2017-01-22 22:13:02.854 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.linkText: Tablets
+2017-01-22 22:13:03.111 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.linkText: Tablets
+2017-01-22 22:13:03.372 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.linkText: Tablets
+2017-01-22 22:13:03.637 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.linkText: Tablets
+2017-01-22 22:13:03.907 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.linkText: Tablets
+2017-01-22 22:13:04.180 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.linkText: Tablets
+2017-01-22 22:13:04.446 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.linkText: Tablets
+2017-01-22 22:13:04.507 [main] INFO  com.frameworkium.core.ui.listeners.ScreenshotListener - Written screenshot to screenshots\1485123184471_categoryTabletsTest.png
+2017-01-22 22:13:04.507 [main] ERROR com.frameworkium.core.common.listeners.TestListener - FAIL  opencart.test.CategoryTabletsTest.categoryTabletsTest
+2017-01-22 22:13:04.510 [main] ERROR com.frameworkium.core.common.listeners.TestListener - Timed out after 5 seconds. Unable to locate the element
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'DESKTOP-S1NO9MQ', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: driver.version: unknown
+org.openqa.selenium.NoSuchElementException: Timed out after 5 seconds. Unable to locate the element
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'DESKTOP-S1NO9MQ', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:91) ~[selenium-support-3.0.1.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-3.0.1.jar:?]
+	at ru.yandex.qatools.htmlelements.loader.decorator.proxyhandlers.WebElementNamedProxyHandler.invoke(WebElementNamedProxyHandler.java:44) ~[htmlelements-java-1.17.jar:?]
+	at com.sun.proxy.$Proxy30.click(Unknown Source) ~[?:?]
+	at opencart.element.NavigationalBarElement.clickTabletsLink(NavigationalBar.java:49) ~[classes/:?]
+	at opencart.test.CategoryTabletsTest.categoryTabletsTest(CategoryTabletsTest.java:17) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_121]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104) ~[testng-6.10.jar:?]
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645) [testng-6.10.jar:?]
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851) [testng-6.10.jar:?]
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177) [testng-6.10.jar:?]
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129) [testng-6.10.jar:?]
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112) [testng-6.10.jar:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:756) [testng-6.10.jar:?]
+	at org.testng.TestRunner.run(TestRunner.java:610) [testng-6.10.jar:?]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387) [testng-6.10.jar:?]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382) [testng-6.10.jar:?]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340) [testng-6.10.jar:?]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289) [testng-6.10.jar:?]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-6.10.jar:?]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86) [testng-6.10.jar:?]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293) [testng-6.10.jar:?]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218) [testng-6.10.jar:?]
+	at org.testng.TestNG.runSuites(TestNG.java:1133) [testng-6.10.jar:?]
+	at org.testng.TestNG.run(TestNG.java:1104) [testng-6.10.jar:?]
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72) [testng-plugin.jar:?]
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:127) [testng-plugin.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_121]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:147) [idea_rt.jar:?]
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: Tablets
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'DESKTOP-S1NO9MQ', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, firefoxOptions={args=[], profile=UEsDBBQACAgIAJuxNkoAAAAAAAAAAAAAAAAHAAAAdXNlci5qc51WTW/bMAy971cMOW3AKqTretlOXdcBA4Z1aFDsKMgSbauRJU0fcfPvR/mjSRNHbndKbJMS+fj4yOjBUeugfLconGnxiXhWQvdf6oo0TLXMAQHNCgVi8eFtyZSH91/exJ2nYAFtrHEhudTAVKj7Z4JGG8ln/DWE1rg1qUOwxNbS19uz9Nky788U6CrU6Pjx8vK52xiwAybwR0AAHkB8l86HK4yFK0C34OJhuKbBvB4pr51pgHrupA3URU2DbJLLxXL6osAKTxAOfauvlfEwnc1oLUyrlWEC79KsSsDWpv1Tg14hWgmpaXeLQdng02W0MYKpGexhE4xRnoBzxnGjvVH7cB+n72WljUbUGmgKcKvu0edz8eC9RKtgkAsOfETcSgyUcsd8nfdVUq+JsaApPAZwmqlUzFczqExlvYt6+rIWCuHkBp8Z54DljBoz90gHysEFP4nEU6Wkt4ptQdycL1e/DDInlfbTtDG+Erf6j9RYX3++JBIvMvd3P9FjwQoTw+dCMb1eHHOuT4gypeiDRzBSnLKH/ji2RysRbrQlbS0DKOkDHvA3SneKCYkGaxnI0E0j6zC5xIUsAIphYbAB8lTzibfRkhq7xuLZtAXFUwdFl0q6OEg5VVt3rCHRYoGBaIS23N6jyat1JNrUSjfZ8IBHJ8MWmaIA/xEfnOSBGicrqak1SvJtnqoaWmw7MuSTqeazQPuTSXq5ikUju1b53b286sj4Mt2cPCab8VN3DoVJRUHLE+q160NMs+34e9yIpizRDs6YtZ4g+0xLiy0VULKowrScjLBzbwf+TEd7zIcs20Y6I/dRqYLbkl4ZO/uPc7bZo0dEbu5/XpELwnZFOk7vgW1YPyGyonpYirFH8jw6jtvBQzfEspf0NE3H5/PcQ5zFYL71SrDiSIIkOufLUxran0o1C/hIYQN6RkH3JuMtMmw2nEIZvu407UWF8sAcrwfazE3dhvTkJiI2Nls0JPmLqPiMLwYBclJMC+qRBh2Kz8X05tOL9dnYfciiEGdG8mB7QlmGFWd+t9kbnL4b67vBiQoUO6nOIpeYNR3EXuuYftJ1K9APfd1vKSeXs2Fk0U6sBMKoK5rkf4YkNeC05DXw9bder772X14/zQgTQqaI2cwgmNyZ/3dXVqaq0sthictK/14vdRlfozRitxZSJfZpWdVBnRh2e67jjf+jbHRsBNLgWtgRcZFWSQcHGO02mbR5IrFxf5xZZXZ9r0ofbb8B7JaMf1BLBwh1hce1pQMAALUMAABQSwECFAAUAAgICACbsTZKdYXHtaUDAAC1DAAABwAAAAAAAAAAAAAAAAAAAAAAdXNlci5qc1BLBQYAAAAAAQABADUAAADaAwAAAAA=}, appBuildId=20161208153507, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=12016, browserVersion=50.1.0, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt}]
+Session ID: d0b73177-82af-421d-9561-6c7f5753a093
+*** Element info: {Using=link text, value=Tablets}
+	at sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_121]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_121]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:127) ~[selenium-remote-driver-3.0.1.jar:?]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:93) ~[selenium-remote-driver-3.0.1.jar:?]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:42) ~[selenium-remote-driver-3.0.1.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163) ~[selenium-remote-driver-3.0.1.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82) ~[selenium-remote-driver-3.0.1.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601) ~[selenium-remote-driver-3.0.1.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368) ~[selenium-remote-driver-3.0.1.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:425) ~[selenium-remote-driver-3.0.1.jar:?]
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:246) ~[selenium-api-3.0.1.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360) ~[selenium-remote-driver-3.0.1.jar:?]
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_121]
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:103) ~[selenium-support-3.0.1.jar:?]
+	at com.sun.proxy.$Proxy25.findElement(Unknown Source) ~[?:?]
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:187) ~[selenium-support-3.0.1.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69) ~[selenium-support-3.0.1.jar:?]
+	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.access$001(AjaxElementLocator.java:41) ~[selenium-support-3.0.1.jar:?]
+	at org.openqa.selenium.support.pagefactory.AjaxElementLocator$SlowLoadingElement.isLoaded(AjaxElementLocator.java:157) ~[selenium-support-3.0.1.jar:?]
+	at org.openqa.selenium.support.ui.SlowLoadableComponent.get(SlowLoadableComponent.java:70) ~[selenium-support-3.0.1.jar:?]
+	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:87) ~[selenium-support-3.0.1.jar:?]
+	... 34 more
+2017-01-22 22:13:04.894 [main] DEBUG com.frameworkium.core.ui.tests.BaseTest - Async screenshot capture: processing remaining backlog...
+2017-01-22 22:13:04.894 [main] DEBUG com.frameworkium.core.ui.tests.BaseTest - Async screenshot capture: finished backlog.
+2017-01-22 22:13:04.894 [main] DEBUG com.frameworkium.core.ui.tests.BaseTest - About to tear down remaining driver(s)
+2017-01-22 22:13:06.753 [main] DEBUG com.frameworkium.core.ui.tests.BaseTest - Finished remaining driver tear down
+2017-01-22 22:13:35.246 [main] WARN  com.frameworkium.core.ui.tests.BaseTest - categoryTabletsTest doesn't have a TestID annotation.
+2017-01-22 22:13:35.293 [main] DEBUG com.frameworkium.core.ui.driver.AbstractDriver - Browser Capabilities: Capabilities [{marionette=true, browserName=firefox, version=, platform=ANY}]
+2017-01-22 22:13:41.243 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - running script return navigator.userAgent;
+2017-01-22 22:13:41.297 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - ran script return navigator.userAgent;
+2017-01-22 22:13:41.297 [main] INFO  com.frameworkium.core.common.listeners.TestListener - START opencart.test.CategoryTabletsTest.categoryTabletsTest
+2017-01-22 22:13:41.382 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - navigate to http://demo.opencart.com
+2017-01-22 22:13:42.618 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - navigated to http://demo.opencart.com
+2017-01-22 22:13:42.660 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.linkText: Tablets
+2017-01-22 22:13:42.687 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - found element By.linkText: Tablets
+2017-01-22 22:13:42.694 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - click element with link text: Tablets
+2017-01-22 22:13:42.754 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - clicked element with link text: Tablets
+2017-01-22 22:13:42.757 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.tagName: h2
+2017-01-22 22:13:42.798 [main] ERROR com.frameworkium.core.common.listeners.TestListener - FAIL  opencart.test.CategoryTabletsTest.categoryTabletsTest
+2017-01-22 22:13:42.800 [main] ERROR com.frameworkium.core.common.listeners.TestListener - Unable to locate element: h2
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'DESKTOP-S1NO9MQ', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, firefoxOptions={args=[], profile=UEsDBBQACAgIALKxNkoAAAAAAAAAAAAAAAAHAAAAdXNlci5qc51WTW/bMAy971cMOW3AKqTretlOXdcBA4Z1aFDsKMgSbauRJU0fcfPvR/mjSRNHbndKbJMS+fj4yOjBUeugfLconGnxiXhWQvdf6oo0TLXMAQHNCgVi8eFtyZSH91/exJ2nYAFtrHEhudTAVKj7Z4JGG8ln/DWE1rg1qUOwxNbS19uz9Nky788U6CrU6Pjx8vK52xiwAybwR0AAHkB8l86HK4yFK0C34OJhuKbBvB4pr51pgHrupA3URU2DbJLLxXL6osAKTxAOfauvlfEwnc1oLUyrlWEC79KsSsDWpv1Tg14hWgmpaXeLQdng02W0MYKpGexhE4xRnoBzxnGjvVH7cB+n72WljUbUGmgKcKvu0edz8eC9RKtgkAsOfETcSgyUcsd8nfdVUq+JsaApPAZwmqlUzFczqExlvYt6+rIWCuHkBp8Z54DljBoz90gHysEFP4nEU6Wkt4ptQdycL1e/DDInlfbTtDG+Erf6j9RYX3++JBIvMvd3P9FjwQoTw+dCMb1eHHOuT4gypeiDRzBSnLKH/ji2RysRbrQlbS0DKOkDHvA3SneKCYkGaxnI0E0j6zC5xIUsAIphYbAB8lTzibfRkhq7xuLZtAXFUwdFl0q6OEg5VVt3rCHRYoGBaIS23N6jyat1JNrUSjfZ8IBHJ8MWmaIA/xEfnOSBGicrqak1SvJtnqoaWmw7MuSTqeazQPuTSXq5ikUju1b53b286sj4Mt2cPCab8VN3DoVJRUHLE+q160NMs+34e9yIpizRDs6YtZ4g+0xLiy0VULKowrScjLBzbwf+TEd7zIcs20Y6I/dRqYLbkl4ZO/uPc7bZo0dEbu5/XpELwnZFOk7vgW1YPyGyonpYirFH8jw6jtvBQzfEspf0NE3H5/PcQ5zFYL71SrDiSIIkOufLUxran0o1C/hIYQN6RkH3JuMtMmw2nEIZvu407UWF8sAcrwfazE3dhvTkJiI2Nls0JPmLqPiMLwYBclJMC+qRBh2Kz8X05tOL9dnYfciiEGdG8mB7QlmGFWd+t9kbnL4b67vBiQoUO6nOIpeYNR3EXuuYftJ1K9APfd1vKSeXs2Fk0U6sBMKoK5rkf4YkNeC05DXw9bder772X14/zQgTQqaI2cwgmNyZ/3dXVqaq0sthictK/14vdRlfozRitxZSJfZpWdVBnRh2e67jjf+jbHRsBNLgWtgRcZFWSQcHGO02mbR5IrFxf5xZZXZ9r0ofbb8B7JaMf1BLBwh1hce1pQMAALUMAABQSwECFAAUAAgICACysTZKdYXHtaUDAAC1DAAABwAAAAAAAAAAAAAAAAAAAAAAdXNlci5qc1BLBQYAAAAAAQABADUAAADaAwAAAAA=}, appBuildId=20161208153507, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=9960, browserVersion=50.1.0, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt}]
+Session ID: 602fd3a2-dbfe-485b-ad90-fb21aacde06c
+*** Element info: {Using=tag name, value=h2}
+org.openqa.selenium.NoSuchElementException: Unable to locate element: h2
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'DESKTOP-S1NO9MQ', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, firefoxOptions={args=[], profile=UEsDBBQACAgIALKxNkoAAAAAAAAAAAAAAAAHAAAAdXNlci5qc51WTW/bMAy971cMOW3AKqTretlOXdcBA4Z1aFDsKMgSbauRJU0fcfPvR/mjSRNHbndKbJMS+fj4yOjBUeugfLconGnxiXhWQvdf6oo0TLXMAQHNCgVi8eFtyZSH91/exJ2nYAFtrHEhudTAVKj7Z4JGG8ln/DWE1rg1qUOwxNbS19uz9Nky788U6CrU6Pjx8vK52xiwAybwR0AAHkB8l86HK4yFK0C34OJhuKbBvB4pr51pgHrupA3URU2DbJLLxXL6osAKTxAOfauvlfEwnc1oLUyrlWEC79KsSsDWpv1Tg14hWgmpaXeLQdng02W0MYKpGexhE4xRnoBzxnGjvVH7cB+n72WljUbUGmgKcKvu0edz8eC9RKtgkAsOfETcSgyUcsd8nfdVUq+JsaApPAZwmqlUzFczqExlvYt6+rIWCuHkBp8Z54DljBoz90gHysEFP4nEU6Wkt4ptQdycL1e/DDInlfbTtDG+Erf6j9RYX3++JBIvMvd3P9FjwQoTw+dCMb1eHHOuT4gypeiDRzBSnLKH/ji2RysRbrQlbS0DKOkDHvA3SneKCYkGaxnI0E0j6zC5xIUsAIphYbAB8lTzibfRkhq7xuLZtAXFUwdFl0q6OEg5VVt3rCHRYoGBaIS23N6jyat1JNrUSjfZ8IBHJ8MWmaIA/xEfnOSBGicrqak1SvJtnqoaWmw7MuSTqeazQPuTSXq5ikUju1b53b286sj4Mt2cPCab8VN3DoVJRUHLE+q160NMs+34e9yIpizRDs6YtZ4g+0xLiy0VULKowrScjLBzbwf+TEd7zIcs20Y6I/dRqYLbkl4ZO/uPc7bZo0dEbu5/XpELwnZFOk7vgW1YPyGyonpYirFH8jw6jtvBQzfEspf0NE3H5/PcQ5zFYL71SrDiSIIkOufLUxran0o1C/hIYQN6RkH3JuMtMmw2nEIZvu407UWF8sAcrwfazE3dhvTkJiI2Nls0JPmLqPiMLwYBclJMC+qRBh2Kz8X05tOL9dnYfciiEGdG8mB7QlmGFWd+t9kbnL4b67vBiQoUO6nOIpeYNR3EXuuYftJ1K9APfd1vKSeXs2Fk0U6sBMKoK5rkf4YkNeC05DXw9bder772X14/zQgTQqaI2cwgmNyZ/3dXVqaq0sthictK/14vdRlfozRitxZSJfZpWdVBnRh2e67jjf+jbHRsBNLgWtgRcZFWSQcHGO02mbR5IrFxf5xZZXZ9r0ofbb8B7JaMf1BLBwh1hce1pQMAALUMAABQSwECFAAUAAgICACysTZKdYXHtaUDAAC1DAAABwAAAAAAAAAAAAAAAAAAAAAAdXNlci5qc1BLBQYAAAAAAQABADUAAADaAwAAAAA=}, appBuildId=20161208153507, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=9960, browserVersion=50.1.0, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt}]
+Session ID: 602fd3a2-dbfe-485b-ad90-fb21aacde06c
+*** Element info: {Using=tag name, value=h2}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_121]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_121]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_121]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_121]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:127) ~[selenium-remote-driver-3.0.1.jar:?]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:93) ~[selenium-remote-driver-3.0.1.jar:?]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:42) ~[selenium-remote-driver-3.0.1.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163) ~[selenium-remote-driver-3.0.1.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82) ~[selenium-remote-driver-3.0.1.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601) ~[selenium-remote-driver-3.0.1.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368) ~[selenium-remote-driver-3.0.1.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByTagName(RemoteWebDriver.java:441) ~[selenium-remote-driver-3.0.1.jar:?]
+	at org.openqa.selenium.By$ByTagName.findElement(By.java:334) ~[selenium-api-3.0.1.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360) ~[selenium-remote-driver-3.0.1.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_121]
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:103) ~[selenium-support-3.0.1.jar:?]
+	at com.sun.proxy.$Proxy25.findElement(Unknown Source) ~[?:?]
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:187) ~[selenium-support-3.0.1.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69) ~[selenium-support-3.0.1.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-3.0.1.jar:?]
+	at com.sun.proxy.$Proxy30.getText(Unknown Source) ~[?:?]
+	at opencart.page.CategoryPage.getCategoryName(CategoryPage.java:14) ~[classes/:?]
+	at opencart.test.CategoryTabletsTest.categoryTabletsTest(CategoryTabletsTest.java:18) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_121]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104) ~[testng-6.10.jar:?]
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645) [testng-6.10.jar:?]
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851) [testng-6.10.jar:?]
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177) [testng-6.10.jar:?]
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129) [testng-6.10.jar:?]
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112) [testng-6.10.jar:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:756) [testng-6.10.jar:?]
+	at org.testng.TestRunner.run(TestRunner.java:610) [testng-6.10.jar:?]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387) [testng-6.10.jar:?]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382) [testng-6.10.jar:?]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340) [testng-6.10.jar:?]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289) [testng-6.10.jar:?]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-6.10.jar:?]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86) [testng-6.10.jar:?]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293) [testng-6.10.jar:?]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218) [testng-6.10.jar:?]
+	at org.testng.TestNG.runSuites(TestNG.java:1133) [testng-6.10.jar:?]
+	at org.testng.TestNG.run(TestNG.java:1104) [testng-6.10.jar:?]
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72) [testng-plugin.jar:?]
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:127) [testng-plugin.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_121]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:147) [idea_rt.jar:?]
+2017-01-22 22:13:43.090 [main] INFO  com.frameworkium.core.ui.listeners.ScreenshotListener - Written screenshot to screenshots\1485123222809_categoryTabletsTest.png
+2017-01-22 22:13:43.665 [main] DEBUG com.frameworkium.core.ui.tests.BaseTest - Async screenshot capture: processing remaining backlog...
+2017-01-22 22:13:43.666 [main] DEBUG com.frameworkium.core.ui.tests.BaseTest - Async screenshot capture: finished backlog.
+2017-01-22 22:13:43.667 [main] DEBUG com.frameworkium.core.ui.tests.BaseTest - About to tear down remaining driver(s)
+2017-01-22 22:13:45.493 [main] DEBUG com.frameworkium.core.ui.tests.BaseTest - Finished remaining driver tear down
+2017-01-22 22:14:14.487 [main] WARN  com.frameworkium.core.ui.tests.BaseTest - categoryTabletsTest doesn't have a TestID annotation.
+2017-01-22 22:14:14.518 [main] DEBUG com.frameworkium.core.ui.driver.AbstractDriver - Browser Capabilities: Capabilities [{marionette=true, browserName=firefox, version=, platform=ANY}]
+2017-01-22 22:14:19.569 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - running script return navigator.userAgent;
+2017-01-22 22:14:19.597 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - ran script return navigator.userAgent;
+2017-01-22 22:14:19.597 [main] INFO  com.frameworkium.core.common.listeners.TestListener - START opencart.test.CategoryTabletsTest.categoryTabletsTest
+2017-01-22 22:14:19.700 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - navigate to http://demo.opencart.com
+2017-01-22 22:14:20.661 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - navigated to http://demo.opencart.com
+2017-01-22 22:14:20.728 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.linkText: Tablets
+2017-01-22 22:14:20.786 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - found element By.linkText: Tablets
+2017-01-22 22:14:20.794 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - click element with link text: Tablets
+2017-01-22 22:14:20.835 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - clicked element with link text: Tablets
+2017-01-22 22:14:21.465 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.tagName: h2
+2017-01-22 22:14:21.636 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.tagName: h2
+2017-01-22 22:14:26.936 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.tagName: h2
+2017-01-22 22:14:26.967 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - found element By.tagName: h2
+2017-01-22 22:14:27.003 [main] INFO  com.frameworkium.core.common.listeners.TestListener - PASS  opencart.test.CategoryTabletsTest.categoryTabletsTest
+2017-01-22 22:14:27.324 [main] DEBUG com.frameworkium.core.ui.tests.BaseTest - Async screenshot capture: processing remaining backlog...
+2017-01-22 22:14:27.325 [main] DEBUG com.frameworkium.core.ui.tests.BaseTest - Async screenshot capture: finished backlog.
+2017-01-22 22:14:27.325 [main] DEBUG com.frameworkium.core.ui.tests.BaseTest - About to tear down remaining driver(s)
+2017-01-22 22:14:28.851 [main] DEBUG com.frameworkium.core.ui.tests.BaseTest - Finished remaining driver tear down
+2017-01-22 22:15:35.564 [main] WARN  com.frameworkium.core.ui.tests.BaseTest - categoryTabletsTest doesn't have a TestID annotation.
+2017-01-22 22:15:35.611 [main] DEBUG com.frameworkium.core.ui.driver.AbstractDriver - Browser Capabilities: Capabilities [{marionette=true, browserName=firefox, version=, platform=ANY}]
+2017-01-22 22:15:39.851 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - running script return navigator.userAgent;
+2017-01-22 22:15:39.903 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - ran script return navigator.userAgent;
+2017-01-22 22:15:39.903 [main] INFO  com.frameworkium.core.common.listeners.TestListener - START opencart.test.CategoryTabletsTest.categoryTabletsTest
+2017-01-22 22:15:39.976 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - navigate to http://demo.opencart.com
+2017-01-22 22:15:41.122 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - navigated to http://demo.opencart.com
+2017-01-22 22:15:41.157 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.linkText: Tablets
+2017-01-22 22:15:41.206 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - found element By.linkText: Tablets
+2017-01-22 22:15:41.212 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - click element with link text: Tablets
+2017-01-22 22:15:41.248 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - clicked element with link text: Tablets
+2017-01-22 22:15:41.249 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.tagName: h2
+2017-01-22 22:15:41.482 [main] INFO  com.frameworkium.core.ui.listeners.ScreenshotListener - Written screenshot to screenshots\1485123341268_categoryTabletsTest.png
+2017-01-22 22:15:41.482 [main] ERROR com.frameworkium.core.common.listeners.TestListener - FAIL  opencart.test.CategoryTabletsTest.categoryTabletsTest
+2017-01-22 22:15:41.485 [main] ERROR com.frameworkium.core.common.listeners.TestListener - Unable to locate element: h2
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'DESKTOP-S1NO9MQ', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, firefoxOptions={args=[], profile=UEsDBBQACAgIAPKxNkoAAAAAAAAAAAAAAAAHAAAAdXNlci5qc51WTW/bMAy971cMOW3AKqTretlOXdcBA4Z1aFDsKMgSbauRJU0fcfPvR/mjSRNHbndKbJMS+fj4yOjBUeugfLconGnxiXhWQvdf6oo0TLXMAQHNCgVi8eFtyZSH91/exJ2nYAFtrHEhudTAVKj7Z4JGG8ln/DWE1rg1qUOwxNbS19uz9Nky788U6CrU6Pjx8vK52xiwAybwR0AAHkB8l86HK4yFK0C34OJhuKbBvB4pr51pgHrupA3URU2DbJLLxXL6osAKTxAOfauvlfEwnc1oLUyrlWEC79KsSsDWpv1Tg14hWgmpaXeLQdng02W0MYKpGexhE4xRnoBzxnGjvVH7cB+n72WljUbUGmgKcKvu0edz8eC9RKtgkAsOfETcSgyUcsd8nfdVUq+JsaApPAZwmqlUzFczqExlvYt6+rIWCuHkBp8Z54DljBoz90gHysEFP4nEU6Wkt4ptQdycL1e/DDInlfbTtDG+Erf6j9RYX3++JBIvMvd3P9FjwQoTw+dCMb1eHHOuT4gypeiDRzBSnLKH/ji2RysRbrQlbS0DKOkDHvA3SneKCYkGaxnI0E0j6zC5xIUsAIphYbAB8lTzibfRkhq7xuLZtAXFUwdFl0q6OEg5VVt3rCHRYoGBaIS23N6jyat1JNrUSjfZ8IBHJ8MWmaIA/xEfnOSBGicrqak1SvJtnqoaWmw7MuSTqeazQPuTSXq5ikUju1b53b286sj4Mt2cPCab8VN3DoVJRUHLE+q160NMs+34e9yIpizRDs6YtZ4g+0xLiy0VULKowrScjLBzbwf+TEd7zIcs20Y6I/dRqYLbkl4ZO/uPc7bZo0dEbu5/XpELwnZFOk7vgW1YPyGyonpYirFH8jw6jtvBQzfEspf0NE3H5/PcQ5zFYL71SrDiSIIkOufLUxran0o1C/hIYQN6RkH3JuMtMmw2nEIZvu407UWF8sAcrwfazE3dhvTkJiI2Nls0JPmLqPiMLwYBclJMC+qRBh2Kz8X05tOL9dnYfciiEGdG8mB7QlmGFWd+t9kbnL4b67vBiQoUO6nOIpeYNR3EXuuYftJ1K9APfd1vKSeXs2Fk0U6sBMKoK5rkf4YkNeC05DXw9bder772X14/zQgTQqaI2cwgmNyZ/3dXVqaq0sthictK/14vdRlfozRitxZSJfZpWdVBnRh2e67jjf+jbHRsBNLgWtgRcZFWSQcHGO02mbR5IrFxf5xZZXZ9r0ofbb8B7JaMf1BLBwh1hce1pQMAALUMAABQSwECFAAUAAgICADysTZKdYXHtaUDAAC1DAAABwAAAAAAAAAAAAAAAAAAAAAAdXNlci5qc1BLBQYAAAAAAQABADUAAADaAwAAAAA=}, appBuildId=20161208153507, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=2656, browserVersion=50.1.0, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt}]
+Session ID: 6b48fbc5-cd8b-4b76-ab9d-6c66ed958870
+*** Element info: {Using=tag name, value=h2}
+org.openqa.selenium.NoSuchElementException: Unable to locate element: h2
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'DESKTOP-S1NO9MQ', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, firefoxOptions={args=[], profile=UEsDBBQACAgIAPKxNkoAAAAAAAAAAAAAAAAHAAAAdXNlci5qc51WTW/bMAy971cMOW3AKqTretlOXdcBA4Z1aFDsKMgSbauRJU0fcfPvR/mjSRNHbndKbJMS+fj4yOjBUeugfLconGnxiXhWQvdf6oo0TLXMAQHNCgVi8eFtyZSH91/exJ2nYAFtrHEhudTAVKj7Z4JGG8ln/DWE1rg1qUOwxNbS19uz9Nky788U6CrU6Pjx8vK52xiwAybwR0AAHkB8l86HK4yFK0C34OJhuKbBvB4pr51pgHrupA3URU2DbJLLxXL6osAKTxAOfauvlfEwnc1oLUyrlWEC79KsSsDWpv1Tg14hWgmpaXeLQdng02W0MYKpGexhE4xRnoBzxnGjvVH7cB+n72WljUbUGmgKcKvu0edz8eC9RKtgkAsOfETcSgyUcsd8nfdVUq+JsaApPAZwmqlUzFczqExlvYt6+rIWCuHkBp8Z54DljBoz90gHysEFP4nEU6Wkt4ptQdycL1e/DDInlfbTtDG+Erf6j9RYX3++JBIvMvd3P9FjwQoTw+dCMb1eHHOuT4gypeiDRzBSnLKH/ji2RysRbrQlbS0DKOkDHvA3SneKCYkGaxnI0E0j6zC5xIUsAIphYbAB8lTzibfRkhq7xuLZtAXFUwdFl0q6OEg5VVt3rCHRYoGBaIS23N6jyat1JNrUSjfZ8IBHJ8MWmaIA/xEfnOSBGicrqak1SvJtnqoaWmw7MuSTqeazQPuTSXq5ikUju1b53b286sj4Mt2cPCab8VN3DoVJRUHLE+q160NMs+34e9yIpizRDs6YtZ4g+0xLiy0VULKowrScjLBzbwf+TEd7zIcs20Y6I/dRqYLbkl4ZO/uPc7bZo0dEbu5/XpELwnZFOk7vgW1YPyGyonpYirFH8jw6jtvBQzfEspf0NE3H5/PcQ5zFYL71SrDiSIIkOufLUxran0o1C/hIYQN6RkH3JuMtMmw2nEIZvu407UWF8sAcrwfazE3dhvTkJiI2Nls0JPmLqPiMLwYBclJMC+qRBh2Kz8X05tOL9dnYfciiEGdG8mB7QlmGFWd+t9kbnL4b67vBiQoUO6nOIpeYNR3EXuuYftJ1K9APfd1vKSeXs2Fk0U6sBMKoK5rkf4YkNeC05DXw9bder772X14/zQgTQqaI2cwgmNyZ/3dXVqaq0sthictK/14vdRlfozRitxZSJfZpWdVBnRh2e67jjf+jbHRsBNLgWtgRcZFWSQcHGO02mbR5IrFxf5xZZXZ9r0ofbb8B7JaMf1BLBwh1hce1pQMAALUMAABQSwECFAAUAAgICADysTZKdYXHtaUDAAC1DAAABwAAAAAAAAAAAAAAAAAAAAAAdXNlci5qc1BLBQYAAAAAAQABADUAAADaAwAAAAA=}, appBuildId=20161208153507, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=2656, browserVersion=50.1.0, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt}]
+Session ID: 6b48fbc5-cd8b-4b76-ab9d-6c66ed958870
+*** Element info: {Using=tag name, value=h2}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_121]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_121]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_121]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_121]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:127) ~[selenium-remote-driver-3.0.1.jar:?]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:93) ~[selenium-remote-driver-3.0.1.jar:?]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:42) ~[selenium-remote-driver-3.0.1.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163) ~[selenium-remote-driver-3.0.1.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82) ~[selenium-remote-driver-3.0.1.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601) ~[selenium-remote-driver-3.0.1.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368) ~[selenium-remote-driver-3.0.1.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByTagName(RemoteWebDriver.java:441) ~[selenium-remote-driver-3.0.1.jar:?]
+	at org.openqa.selenium.By$ByTagName.findElement(By.java:334) ~[selenium-api-3.0.1.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360) ~[selenium-remote-driver-3.0.1.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_121]
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:103) ~[selenium-support-3.0.1.jar:?]
+	at com.sun.proxy.$Proxy25.findElement(Unknown Source) ~[?:?]
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:187) ~[selenium-support-3.0.1.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69) ~[selenium-support-3.0.1.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-3.0.1.jar:?]
+	at com.sun.proxy.$Proxy30.getText(Unknown Source) ~[?:?]
+	at opencart.page.CategoryPage.getCategoryName(CategoryPage.java:14) ~[classes/:?]
+	at opencart.test.CategoryTabletsTest.categoryTabletsTest(CategoryTabletsTest.java:18) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_121]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104) ~[testng-6.10.jar:?]
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645) [testng-6.10.jar:?]
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851) [testng-6.10.jar:?]
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177) [testng-6.10.jar:?]
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129) [testng-6.10.jar:?]
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112) [testng-6.10.jar:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:756) [testng-6.10.jar:?]
+	at org.testng.TestRunner.run(TestRunner.java:610) [testng-6.10.jar:?]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387) [testng-6.10.jar:?]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382) [testng-6.10.jar:?]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340) [testng-6.10.jar:?]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289) [testng-6.10.jar:?]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-6.10.jar:?]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86) [testng-6.10.jar:?]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293) [testng-6.10.jar:?]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218) [testng-6.10.jar:?]
+	at org.testng.TestNG.runSuites(TestNG.java:1133) [testng-6.10.jar:?]
+	at org.testng.TestNG.run(TestNG.java:1104) [testng-6.10.jar:?]
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72) [testng-plugin.jar:?]
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:127) [testng-plugin.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_121]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:147) [idea_rt.jar:?]
+2017-01-22 22:15:41.930 [main] DEBUG com.frameworkium.core.ui.tests.BaseTest - Async screenshot capture: processing remaining backlog...
+2017-01-22 22:15:41.930 [main] DEBUG com.frameworkium.core.ui.tests.BaseTest - Async screenshot capture: finished backlog.
+2017-01-22 22:15:41.931 [main] DEBUG com.frameworkium.core.ui.tests.BaseTest - About to tear down remaining driver(s)
+2017-01-22 22:15:43.924 [main] DEBUG com.frameworkium.core.ui.tests.BaseTest - Finished remaining driver tear down
+2017-01-22 22:19:43.278 [main] WARN  com.frameworkium.core.ui.tests.BaseTest - categoryTabletsTest doesn't have a TestID annotation.
+2017-01-22 22:19:43.325 [main] DEBUG com.frameworkium.core.ui.driver.AbstractDriver - Browser Capabilities: Capabilities [{marionette=true, browserName=firefox, version=, platform=ANY}]
+2017-01-22 22:19:47.505 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - running script return navigator.userAgent;
+2017-01-22 22:19:47.550 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - ran script return navigator.userAgent;
+2017-01-22 22:19:47.550 [main] INFO  com.frameworkium.core.common.listeners.TestListener - START opencart.test.CategoryTabletsTest.categoryTabletsTest
+2017-01-22 22:19:47.668 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - running script return typeof angular == 'object';
+2017-01-22 22:19:47.694 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - ran script return typeof angular == 'object';
+2017-01-22 22:19:47.694 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - running script return typeof ng == 'object';
+2017-01-22 22:19:47.705 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - ran script return typeof ng == 'object';
+2017-01-22 22:19:47.707 [main] DEBUG com.frameworkium.core.common.reporting.allure.AllureLogger - Logged to allure: Page 'opencart.page.HomePage' successfully loaded
+2017-01-22 22:19:47.741 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - running script return typeof angular == 'object';
+2017-01-22 22:19:47.754 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - ran script return typeof angular == 'object';
+2017-01-22 22:19:47.754 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - running script return typeof ng == 'object';
+2017-01-22 22:19:47.762 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - ran script return typeof ng == 'object';
+2017-01-22 22:19:47.762 [main] DEBUG com.frameworkium.core.common.reporting.allure.AllureLogger - Logged to allure: Page 'opencart.page.CategoryPage' successfully loaded
+2017-01-22 22:19:47.764 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.tagName: h2
+2017-01-22 22:19:47.780 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.tagName: h2
+2017-01-22 22:19:48.040 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.tagName: h2
+2017-01-22 22:19:48.305 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.tagName: h2
+2017-01-22 22:19:48.589 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.tagName: h2
+2017-01-22 22:19:48.851 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.tagName: h2
+2017-01-22 22:19:49.118 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.tagName: h2
+2017-01-22 22:19:49.394 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.tagName: h2
+2017-01-22 22:19:49.676 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.tagName: h2
+2017-01-22 22:19:49.938 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.tagName: h2
+2017-01-22 22:19:50.211 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.tagName: h2
+2017-01-22 22:19:50.488 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.tagName: h2
+2017-01-22 22:19:50.749 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.tagName: h2
+2017-01-22 22:19:51.014 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.tagName: h2
+2017-01-22 22:19:51.273 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.tagName: h2
+2017-01-22 22:19:51.540 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.tagName: h2
+2017-01-22 22:19:51.810 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.tagName: h2
+2017-01-22 22:19:52.072 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.tagName: h2
+2017-01-22 22:19:52.336 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.tagName: h2
+2017-01-22 22:19:52.609 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.tagName: h2
+2017-01-22 22:19:52.883 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.tagName: h2
+2017-01-22 22:19:52.939 [main] INFO  com.frameworkium.core.ui.listeners.ScreenshotListener - Written screenshot to screenshots\1485123592909_categoryTabletsTest.png
+2017-01-22 22:19:52.939 [main] ERROR com.frameworkium.core.common.listeners.TestListener - FAIL  opencart.test.CategoryTabletsTest.categoryTabletsTest
+2017-01-22 22:19:52.942 [main] ERROR com.frameworkium.core.common.listeners.TestListener - Timed out after 5 seconds. Unable to locate the element
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'DESKTOP-S1NO9MQ', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: driver.version: unknown
+org.openqa.selenium.NoSuchElementException: Timed out after 5 seconds. Unable to locate the element
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'DESKTOP-S1NO9MQ', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:91) ~[selenium-support-3.0.1.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-3.0.1.jar:?]
+	at ru.yandex.qatools.htmlelements.loader.decorator.proxyhandlers.WebElementNamedProxyHandler.invoke(WebElementNamedProxyHandler.java:44) ~[htmlelements-java-1.17.jar:?]
+	at com.sun.proxy.$Proxy30.getText(Unknown Source) ~[?:?]
+	at opencart.page.CategoryPage.getCategoryName(CategoryPage.java:15) ~[classes/:?]
+	at opencart.test.CategoryTabletsTest.categoryTabletsTest(CategoryTabletsTest.java:16) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_121]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104) ~[testng-6.10.jar:?]
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645) [testng-6.10.jar:?]
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851) [testng-6.10.jar:?]
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177) [testng-6.10.jar:?]
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129) [testng-6.10.jar:?]
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112) [testng-6.10.jar:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:756) [testng-6.10.jar:?]
+	at org.testng.TestRunner.run(TestRunner.java:610) [testng-6.10.jar:?]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387) [testng-6.10.jar:?]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382) [testng-6.10.jar:?]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340) [testng-6.10.jar:?]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289) [testng-6.10.jar:?]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-6.10.jar:?]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86) [testng-6.10.jar:?]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293) [testng-6.10.jar:?]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218) [testng-6.10.jar:?]
+	at org.testng.TestNG.runSuites(TestNG.java:1133) [testng-6.10.jar:?]
+	at org.testng.TestNG.run(TestNG.java:1104) [testng-6.10.jar:?]
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72) [testng-plugin.jar:?]
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:127) [testng-plugin.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_121]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:147) [idea_rt.jar:?]
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: h2
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'DESKTOP-S1NO9MQ', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, firefoxOptions={args=[], profile=UEsDBBQACAgIAHayNkoAAAAAAAAAAAAAAAAHAAAAdXNlci5qc51WTW/bMAy971cMOW3AKqTretlOXdcBA4Z1aFDsKMgSbauRJU0fcfPvR/mjSRNHbndKbJMS+fj4yOjBUeugfLconGnxiXhWQvdf6oo0TLXMAQHNCgVi8eFtyZSH91/exJ2nYAFtrHEhudTAVKj7Z4JGG8ln/DWE1rg1qUOwxNbS19uz9Nky788U6CrU6Pjx8vK52xiwAybwR0AAHkB8l86HK4yFK0C34OJhuKbBvB4pr51pgHrupA3URU2DbJLLxXL6osAKTxAOfauvlfEwnc1oLUyrlWEC79KsSsDWpv1Tg14hWgmpaXeLQdng02W0MYKpGexhE4xRnoBzxnGjvVH7cB+n72WljUbUGmgKcKvu0edz8eC9RKtgkAsOfETcSgyUcsd8nfdVUq+JsaApPAZwmqlUzFczqExlvYt6+rIWCuHkBp8Z54DljBoz90gHysEFP4nEU6Wkt4ptQdycL1e/DDInlfbTtDG+Erf6j9RYX3++JBIvMvd3P9FjwQoTw+dCMb1eHHOuT4gypeiDRzBSnLKH/ji2RysRbrQlbS0DKOkDHvA3SneKCYkGaxnI0E0j6zC5xIUsAIphYbAB8lTzibfRkhq7xuLZtAXFUwdFl0q6OEg5VVt3rCHRYoGBaIS23N6jyat1JNrUSjfZ8IBHJ8MWmaIA/xEfnOSBGicrqak1SvJtnqoaWmw7MuSTqeazQPuTSXq5ikUju1b53b286sj4Mt2cPCab8VN3DoVJRUHLE+q160NMs+34e9yIpizRDs6YtZ4g+0xLiy0VULKowrScjLBzbwf+TEd7zIcs20Y6I/dRqYLbkl4ZO/uPc7bZo0dEbu5/XpELwnZFOk7vgW1YPyGyonpYirFH8jw6jtvBQzfEspf0NE3H5/PcQ5zFYL71SrDiSIIkOufLUxran0o1C/hIYQN6RkH3JuMtMmw2nEIZvu407UWF8sAcrwfazE3dhvTkJiI2Nls0JPmLqPiMLwYBclJMC+qRBh2Kz8X05tOL9dnYfciiEGdG8mB7QlmGFWd+t9kbnL4b67vBiQoUO6nOIpeYNR3EXuuYftJ1K9APfd1vKSeXs2Fk0U6sBMKoK5rkf4YkNeC05DXw9bder772X14/zQgTQqaI2cwgmNyZ/3dXVqaq0sthictK/14vdRlfozRitxZSJfZpWdVBnRh2e67jjf+jbHRsBNLgWtgRcZFWSQcHGO02mbR5IrFxf5xZZXZ9r0ofbb8B7JaMf1BLBwh1hce1pQMAALUMAABQSwECFAAUAAgICAB2sjZKdYXHtaUDAAC1DAAABwAAAAAAAAAAAAAAAAAAAAAAdXNlci5qc1BLBQYAAAAAAQABADUAAADaAwAAAAA=}, appBuildId=20161208153507, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=9292, browserVersion=50.1.0, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt}]
+Session ID: 6dbf9a12-6354-4920-b742-07d61e90e3e2
+*** Element info: {Using=tag name, value=h2}
+	at sun.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_121]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_121]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:127) ~[selenium-remote-driver-3.0.1.jar:?]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:93) ~[selenium-remote-driver-3.0.1.jar:?]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:42) ~[selenium-remote-driver-3.0.1.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163) ~[selenium-remote-driver-3.0.1.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82) ~[selenium-remote-driver-3.0.1.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601) ~[selenium-remote-driver-3.0.1.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368) ~[selenium-remote-driver-3.0.1.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByTagName(RemoteWebDriver.java:441) ~[selenium-remote-driver-3.0.1.jar:?]
+	at org.openqa.selenium.By$ByTagName.findElement(By.java:334) ~[selenium-api-3.0.1.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360) ~[selenium-remote-driver-3.0.1.jar:?]
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_121]
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:103) ~[selenium-support-3.0.1.jar:?]
+	at com.sun.proxy.$Proxy25.findElement(Unknown Source) ~[?:?]
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:187) ~[selenium-support-3.0.1.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69) ~[selenium-support-3.0.1.jar:?]
+	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.access$001(AjaxElementLocator.java:41) ~[selenium-support-3.0.1.jar:?]
+	at org.openqa.selenium.support.pagefactory.AjaxElementLocator$SlowLoadingElement.isLoaded(AjaxElementLocator.java:157) ~[selenium-support-3.0.1.jar:?]
+	at org.openqa.selenium.support.ui.SlowLoadableComponent.get(SlowLoadableComponent.java:70) ~[selenium-support-3.0.1.jar:?]
+	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:87) ~[selenium-support-3.0.1.jar:?]
+	... 34 more
+2017-01-22 22:19:53.175 [main] DEBUG com.frameworkium.core.ui.tests.BaseTest - Async screenshot capture: processing remaining backlog...
+2017-01-22 22:19:53.175 [main] DEBUG com.frameworkium.core.ui.tests.BaseTest - Async screenshot capture: finished backlog.
+2017-01-22 22:19:53.176 [main] DEBUG com.frameworkium.core.ui.tests.BaseTest - About to tear down remaining driver(s)
+2017-01-22 22:19:54.811 [main] DEBUG com.frameworkium.core.ui.tests.BaseTest - Finished remaining driver tear down
+2017-01-22 22:20:11.934 [main] WARN  com.frameworkium.core.ui.tests.BaseTest - categoryTabletsTest doesn't have a TestID annotation.
+2017-01-22 22:20:11.965 [main] DEBUG com.frameworkium.core.ui.driver.AbstractDriver - Browser Capabilities: Capabilities [{marionette=true, browserName=firefox, version=, platform=ANY}]
+2017-01-22 22:20:16.168 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - running script return navigator.userAgent;
+2017-01-22 22:20:16.198 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - ran script return navigator.userAgent;
+2017-01-22 22:20:16.199 [main] INFO  com.frameworkium.core.common.listeners.TestListener - START opencart.test.CategoryTabletsTest.categoryTabletsTest
+2017-01-22 22:20:16.283 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - navigate to http://demo.opencart.com
+2017-01-22 22:20:17.255 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - navigated to http://demo.opencart.com
+2017-01-22 22:20:17.302 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - running script return typeof angular == 'object';
+2017-01-22 22:20:17.314 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - ran script return typeof angular == 'object';
+2017-01-22 22:20:17.314 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - running script return typeof ng == 'object';
+2017-01-22 22:20:17.341 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - ran script return typeof ng == 'object';
+2017-01-22 22:20:17.342 [main] DEBUG com.frameworkium.core.common.reporting.allure.AllureLogger - Logged to allure: Page 'opencart.page.HomePage' successfully loaded
+2017-01-22 22:20:17.390 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - running script return typeof angular == 'object';
+2017-01-22 22:20:17.419 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - ran script return typeof angular == 'object';
+2017-01-22 22:20:17.419 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - running script return typeof ng == 'object';
+2017-01-22 22:20:17.430 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - ran script return typeof ng == 'object';
+2017-01-22 22:20:17.430 [main] DEBUG com.frameworkium.core.common.reporting.allure.AllureLogger - Logged to allure: Page 'opencart.page.CategoryPage' successfully loaded
+2017-01-22 22:20:17.432 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.tagName: h2
+2017-01-22 22:20:17.462 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.tagName: h2
+2017-01-22 22:20:17.723 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.tagName: h2
+2017-01-22 22:20:18.003 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.tagName: h2
+2017-01-22 22:20:18.263 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.tagName: h2
+2017-01-22 22:20:18.523 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.tagName: h2
+2017-01-22 22:20:18.784 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.tagName: h2
+2017-01-22 22:20:19.056 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.tagName: h2
+2017-01-22 22:20:19.348 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.tagName: h2
+2017-01-22 22:20:19.621 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.tagName: h2
+2017-01-22 22:20:19.880 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.tagName: h2
+2017-01-22 22:20:20.142 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.tagName: h2
+2017-01-22 22:20:20.415 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.tagName: h2
+2017-01-22 22:20:20.687 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.tagName: h2
+2017-01-22 22:20:20.960 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.tagName: h2
+2017-01-22 22:20:21.223 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.tagName: h2
+2017-01-22 22:20:21.485 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.tagName: h2
+2017-01-22 22:20:21.757 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.tagName: h2
+2017-01-22 22:20:22.030 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.tagName: h2
+2017-01-22 22:20:22.301 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.tagName: h2
+2017-01-22 22:20:22.559 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.tagName: h2
+2017-01-22 22:20:22.583 [main] ERROR com.frameworkium.core.common.listeners.TestListener - FAIL  opencart.test.CategoryTabletsTest.categoryTabletsTest
+2017-01-22 22:20:22.593 [main] ERROR com.frameworkium.core.common.listeners.TestListener - Timed out after 5 seconds. Unable to locate the element
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'DESKTOP-S1NO9MQ', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: driver.version: unknown
+org.openqa.selenium.NoSuchElementException: Timed out after 5 seconds. Unable to locate the element
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'DESKTOP-S1NO9MQ', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:91) ~[selenium-support-3.0.1.jar:?]
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38) ~[selenium-support-3.0.1.jar:?]
+	at ru.yandex.qatools.htmlelements.loader.decorator.proxyhandlers.WebElementNamedProxyHandler.invoke(WebElementNamedProxyHandler.java:44) ~[htmlelements-java-1.17.jar:?]
+	at com.sun.proxy.$Proxy30.getText(Unknown Source) ~[?:?]
+	at opencart.page.CategoryPage.getCategoryName(CategoryPage.java:15) ~[classes/:?]
+	at opencart.test.CategoryTabletsTest.categoryTabletsTest(CategoryTabletsTest.java:16) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_121]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104) ~[testng-6.10.jar:?]
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645) [testng-6.10.jar:?]
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851) [testng-6.10.jar:?]
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177) [testng-6.10.jar:?]
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129) [testng-6.10.jar:?]
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112) [testng-6.10.jar:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:756) [testng-6.10.jar:?]
+	at org.testng.TestRunner.run(TestRunner.java:610) [testng-6.10.jar:?]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387) [testng-6.10.jar:?]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382) [testng-6.10.jar:?]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340) [testng-6.10.jar:?]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289) [testng-6.10.jar:?]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-6.10.jar:?]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86) [testng-6.10.jar:?]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293) [testng-6.10.jar:?]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218) [testng-6.10.jar:?]
+	at org.testng.TestNG.runSuites(TestNG.java:1133) [testng-6.10.jar:?]
+	at org.testng.TestNG.run(TestNG.java:1104) [testng-6.10.jar:?]
+	at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72) [testng-plugin.jar:?]
+	at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:127) [testng-plugin.jar:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_121]
+	at com.intellij.rt.execution.application.AppMain.main(AppMain.java:147) [idea_rt.jar:?]
+Caused by: org.openqa.selenium.NoSuchElementException: Unable to locate element: h2
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.0.1', revision: '1969d75', time: '2016-10-18 09:49:13 -0700'
+System info: host: 'DESKTOP-S1NO9MQ', ip: '192.168.0.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_121'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, marionette=true, firefoxOptions={args=[], profile=UEsDBBQACAgIAIayNkoAAAAAAAAAAAAAAAAHAAAAdXNlci5qc51WTW/bMAy971cMOW3AKqTretlOXdcBA4Z1aFDsKMgSbauRJU0fcfPvR/mjSRNHbndKbJMS+fj4yOjBUeugfLconGnxiXhWQvdf6oo0TLXMAQHNCgVi8eFtyZSH91/exJ2nYAFtrHEhudTAVKj7Z4JGG8ln/DWE1rg1qUOwxNbS19uz9Nky788U6CrU6Pjx8vK52xiwAybwR0AAHkB8l86HK4yFK0C34OJhuKbBvB4pr51pgHrupA3URU2DbJLLxXL6osAKTxAOfauvlfEwnc1oLUyrlWEC79KsSsDWpv1Tg14hWgmpaXeLQdng02W0MYKpGexhE4xRnoBzxnGjvVH7cB+n72WljUbUGmgKcKvu0edz8eC9RKtgkAsOfETcSgyUcsd8nfdVUq+JsaApPAZwmqlUzFczqExlvYt6+rIWCuHkBp8Z54DljBoz90gHysEFP4nEU6Wkt4ptQdycL1e/DDInlfbTtDG+Erf6j9RYX3++JBIvMvd3P9FjwQoTw+dCMb1eHHOuT4gypeiDRzBSnLKH/ji2RysRbrQlbS0DKOkDHvA3SneKCYkGaxnI0E0j6zC5xIUsAIphYbAB8lTzibfRkhq7xuLZtAXFUwdFl0q6OEg5VVt3rCHRYoGBaIS23N6jyat1JNrUSjfZ8IBHJ8MWmaIA/xEfnOSBGicrqak1SvJtnqoaWmw7MuSTqeazQPuTSXq5ikUju1b53b286sj4Mt2cPCab8VN3DoVJRUHLE+q160NMs+34e9yIpizRDs6YtZ4g+0xLiy0VULKowrScjLBzbwf+TEd7zIcs20Y6I/dRqYLbkl4ZO/uPc7bZo0dEbu5/XpELwnZFOk7vgW1YPyGyonpYirFH8jw6jtvBQzfEspf0NE3H5/PcQ5zFYL71SrDiSIIkOufLUxran0o1C/hIYQN6RkH3JuMtMmw2nEIZvu407UWF8sAcrwfazE3dhvTkJiI2Nls0JPmLqPiMLwYBclJMC+qRBh2Kz8X05tOL9dnYfciiEGdG8mB7QlmGFWd+t9kbnL4b67vBiQoUO6nOIpeYNR3EXuuYftJ1K9APfd1vKSeXs2Fk0U6sBMKoK5rkf4YkNeC05DXw9bder772X14/zQgTQqaI2cwgmNyZ/3dXVqaq0sthictK/14vdRlfozRitxZSJfZpWdVBnRh2e67jjf+jbHRsBNLgWtgRcZFWSQcHGO02mbR5IrFxf5xZZXZ9r0ofbb8B7JaMf1BLBwh1hce1pQMAALUMAABQSwECFAAUAAgICACGsjZKdYXHtaUDAAC1DAAABwAAAAAAAAAAAAAAAAAAAAAAdXNlci5qc1BLBQYAAAAAAQABADUAAADaAwAAAAA=}, appBuildId=20161208153507, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, processId=2320, browserVersion=50.1.0, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=windows_nt}]
+Session ID: fc758728-782b-4699-aec6-9ad4dad8e0a5
+*** Element info: {Using=tag name, value=h2}
+	at sun.reflect.GeneratedConstructorAccessor17.newInstance(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_121]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_121]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:127) ~[selenium-remote-driver-3.0.1.jar:?]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:93) ~[selenium-remote-driver-3.0.1.jar:?]
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:42) ~[selenium-remote-driver-3.0.1.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:163) ~[selenium-remote-driver-3.0.1.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82) ~[selenium-remote-driver-3.0.1.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601) ~[selenium-remote-driver-3.0.1.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368) ~[selenium-remote-driver-3.0.1.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByTagName(RemoteWebDriver.java:441) ~[selenium-remote-driver-3.0.1.jar:?]
+	at org.openqa.selenium.By$ByTagName.findElement(By.java:334) ~[selenium-api-3.0.1.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360) ~[selenium-remote-driver-3.0.1.jar:?]
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source) ~[?:?]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_121]
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:103) ~[selenium-support-3.0.1.jar:?]
+	at com.sun.proxy.$Proxy25.findElement(Unknown Source) ~[?:?]
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:187) ~[selenium-support-3.0.1.jar:?]
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69) ~[selenium-support-3.0.1.jar:?]
+	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.access$001(AjaxElementLocator.java:41) ~[selenium-support-3.0.1.jar:?]
+	at org.openqa.selenium.support.pagefactory.AjaxElementLocator$SlowLoadingElement.isLoaded(AjaxElementLocator.java:157) ~[selenium-support-3.0.1.jar:?]
+	at org.openqa.selenium.support.ui.SlowLoadableComponent.get(SlowLoadableComponent.java:70) ~[selenium-support-3.0.1.jar:?]
+	at org.openqa.selenium.support.pagefactory.AjaxElementLocator.findElement(AjaxElementLocator.java:87) ~[selenium-support-3.0.1.jar:?]
+	... 34 more
+2017-01-22 22:20:22.847 [main] INFO  com.frameworkium.core.ui.listeners.ScreenshotListener - Written screenshot to screenshots\1485123622617_categoryTabletsTest.png
+2017-01-22 22:20:23.174 [main] DEBUG com.frameworkium.core.ui.tests.BaseTest - Async screenshot capture: processing remaining backlog...
+2017-01-22 22:20:23.174 [main] DEBUG com.frameworkium.core.ui.tests.BaseTest - Async screenshot capture: finished backlog.
+2017-01-22 22:20:23.175 [main] DEBUG com.frameworkium.core.ui.tests.BaseTest - About to tear down remaining driver(s)
+2017-01-22 22:20:24.826 [main] DEBUG com.frameworkium.core.ui.tests.BaseTest - Finished remaining driver tear down
+2017-01-22 22:23:41.677 [main] WARN  com.frameworkium.core.ui.tests.BaseTest - categoryTabletsTest doesn't have a TestID annotation.
+2017-01-22 22:23:41.708 [main] DEBUG com.frameworkium.core.ui.driver.AbstractDriver - Browser Capabilities: Capabilities [{marionette=true, browserName=firefox, version=, platform=ANY}]
+2017-01-22 22:23:45.830 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - running script return navigator.userAgent;
+2017-01-22 22:23:45.888 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - ran script return navigator.userAgent;
+2017-01-22 22:23:45.889 [main] INFO  com.frameworkium.core.common.listeners.TestListener - START opencart.test.CategoryTabletsTest.categoryTabletsTest
+2017-01-22 22:23:45.994 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - navigate to http://demo.opencart.com
+2017-01-22 22:23:47.065 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - navigated to http://demo.opencart.com
+2017-01-22 22:23:47.115 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - running script return typeof angular == 'object';
+2017-01-22 22:23:47.138 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - ran script return typeof angular == 'object';
+2017-01-22 22:23:47.138 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - running script return typeof ng == 'object';
+2017-01-22 22:23:47.151 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - ran script return typeof ng == 'object';
+2017-01-22 22:23:47.152 [main] DEBUG com.frameworkium.core.common.reporting.allure.AllureLogger - Logged to allure: Page 'opencart.page.HomePage' successfully loaded
+2017-01-22 22:23:47.180 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.linkText: Tablets
+2017-01-22 22:23:47.201 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - found element By.linkText: Tablets
+2017-01-22 22:23:47.208 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - click element with link text: Tablets
+2017-01-22 22:23:47.252 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - clicked element with link text: Tablets
+2017-01-22 22:23:47.282 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - running script return typeof angular == 'object';
+2017-01-22 22:23:47.303 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - ran script return typeof angular == 'object';
+2017-01-22 22:23:47.303 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - running script return typeof ng == 'object';
+2017-01-22 22:23:47.315 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - ran script return typeof ng == 'object';
+2017-01-22 22:23:47.315 [main] DEBUG com.frameworkium.core.common.reporting.allure.AllureLogger - Logged to allure: Page 'opencart.page.CategoryPage' successfully loaded
+2017-01-22 22:23:47.315 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.tagName: h2
+2017-01-22 22:23:47.332 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.tagName: h2
+2017-01-22 22:23:47.592 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.tagName: h2
+2017-01-22 22:23:47.853 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - find element By.tagName: h2
+2017-01-22 22:23:47.897 [main] DEBUG com.frameworkium.core.ui.listeners.EventListener - found element By.tagName: h2
+2017-01-22 22:23:47.976 [main] INFO  com.frameworkium.core.common.listeners.TestListener - PASS  opencart.test.CategoryTabletsTest.categoryTabletsTest
+2017-01-22 22:23:48.217 [main] DEBUG com.frameworkium.core.ui.tests.BaseTest - Async screenshot capture: processing remaining backlog...
+2017-01-22 22:23:48.217 [main] DEBUG com.frameworkium.core.ui.tests.BaseTest - Async screenshot capture: finished backlog.
+2017-01-22 22:23:48.218 [main] DEBUG com.frameworkium.core.ui.tests.BaseTest - About to tear down remaining driver(s)
+2017-01-22 22:23:49.651 [main] DEBUG com.frameworkium.core.ui.tests.BaseTest - Finished remaining driver tear down
