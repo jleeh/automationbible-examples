@@ -1,2 +1,7 @@
 .idea
 *.iml
+target/
+screenshots/
+src/main/resources/
+src/test/
+logs/
